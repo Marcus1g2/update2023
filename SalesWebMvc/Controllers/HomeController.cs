@@ -15,6 +15,9 @@ namespace SalesWebMvc.Controllers
 
         public IActionResult Index()
         {
+            ViewData["msg"] = "Primeira mensagem";
+            ViewData["para"] = "segunda mensagem";
+
             return View();
         }
 
